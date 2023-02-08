@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import CADWindow from './CADWindow'
+import './App.css'
+import { Canvas } from '@react-three/fiber'
+import { OrbitControls, Stars } from '@react-three/drei'
+import { Physics, useBox, usePlane } from '@react-three/cannon'
+import { Model } from './Avatar'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <CADWindow></CADWindow>
 }
 
-export default App;
+export default App
